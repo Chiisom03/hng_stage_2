@@ -24,8 +24,8 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="w-full border-b border-white">
-            <div className="flex justify-end py-[20px] bg-primary max-w-[960px] mx-auto">
+        <nav className="w-full border-b border-white bg-primary">
+            <div className="flex justify-end py-[20px] max-w-[1182px] mx-auto">
                 <div className="flex gap-x-4 items-center">
                     <ul className="flex">
                         {navLinks.map((nav) => (

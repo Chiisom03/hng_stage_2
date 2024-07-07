@@ -7,7 +7,7 @@ type ButtonProps = {
 
 const Button: FC<ButtonProps> = ({ btnText, width }) => {
   return (
-    <button className={`uppercase text-md-text bg-t-orange h-[60px] ${width ?? 'w-[167px] rounded-[10px]'}`}>{btnText}</button>
+    <button className={`uppercase text-md-text bg-t-orange h-[60px] rounded-[10px] ${width ?? 'w-[167px]'}`}>{btnText}</button>
   )
 }
 
