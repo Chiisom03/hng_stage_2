@@ -1,0 +1,9 @@
+:root {
+  --font-small: 24px;
+  --font-medium: 32px;
+  --font-large: 64px;
+  --color-primary: #FFEBD8;
+  --color-turquoise: #A0E9FF;
+  --color-t-orange: #F56E0F;
+  --default-font: 'cabincondensed', sans-serif;
+}
