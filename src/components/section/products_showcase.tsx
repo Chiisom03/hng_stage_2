@@ -23,7 +23,7 @@ const ProductsShowcase = () => {
       image: Rings
     },
     {
-      id: 3,
+      id: 4,
       name: "Wrist Watches",
       image: Watches
     }

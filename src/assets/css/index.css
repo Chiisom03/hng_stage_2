@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 100%;
   }
 
   @font-face {
@@ -44,7 +45,7 @@
   }
 
   .footer_links {
-    @apply mt-6 text-sm-text;
+    @apply mt-6 text-sm-text w-max;
   }
 
   .footer_link_title {

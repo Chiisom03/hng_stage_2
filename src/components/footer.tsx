@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="footer_link_container mr-[74px]">
             <div className="flex gap-x-[30px] items-center justify-center">
               <img src={FacebookIcon} alt="facebook icon" />
-              <img src={InstagramIcon} alt="instagram icon" />
+              <img src={InstagramIcon} alt="instagram icon" className="w-[50px]" />
             </div>
           </div>
 
@@ -31,35 +31,35 @@ const Footer = () => {
           <div className="footer_link_container mr-[33px]">
             <h1 className="footer_link_title">PRODUCTS</h1>
             <ul className="footer_links">
-              <li>EARRINGS</li>
-              <li>WRIST WATCHES</li>
-              <li>BRACELETS</li>
-              <li>RINGS</li>
+              <li><a href="/">EARRINGS</a></li>
+              <li><a href="/">WRIST WATCHES</a></li>
+              <li><a href="/">BRACELETS</a></li>
+              <li><a href="/">RINGS</a></li>
             </ul>
           </div>
 
           <div className="footer_link_container mr-[159px]">
             <h1 className="footer_link_title">POLICY</h1>
             <ul className="footer_links">
-              <li>REFUNDS</li>
-              <li>LEGAL</li>
-              <li>ABOUT US</li>
-              <li>CONTACT US</li>
+              <li><a href="">REFUNDS</a></li>
+              <li><a href="">LEGAL</a></li>
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">CONTACT US</a></li>
             </ul>
           </div>
-
           <div className="footer_link_container">
             <h1 className="footer_link_title">SIGN UP</h1>
-            <form className="footer_links">
-              <li>Get the Latest Update and Offers</li>
-              <input className='bg-transparent border-b border-b-t-orange w-full pb-5 pt-8 pl-4 mb-8 placeholder:text-t-orange outline-none'
+            <form className="text-sm-text mt-6">
+              <p>Get the Latest Update and Offers</p>
+
+              <input className='bg-transparent border-b border-b-t-orange pb-5 pt-8 pl-4 mb-8 placeholder:text-t-orange outline-none w-[308px]'
                 type="text"
                 value={subscriptionEmail}
                 placeholder="Enter Email"
                 onChange={(e) => setSubscriptionEmail(e.target.value)} />
-              <li>
-                <Button btnText="subscribe" hasBorder />
-              </li>
+
+              <Button btnText="subscribe" hasBorder type="submit" />
+
             </form>
           </div>
         </div>

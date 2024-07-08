@@ -5,15 +5,16 @@ type ButtonProps = {
   width?: string;
   onClick?: () => void;
   hasBorder?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
-const Button: FC<ButtonProps> = ({ btnText, width, onClick, hasBorder }) => {
+const Button: FC<ButtonProps> = ({ btnText, width, onClick, hasBorder, type }) => {
   return (
     <>
       {
         hasBorder ? (
           <button
-            onClick={onClick}
+            onClick={onClick} type={type ?? 'button'}
             className={`border duration-300 border-t-orange uppercase text-sm-text h-[72px] bg-transparent text-t-orange ${width ?? 'w-[306px]'}`}>
             {btnText}
           </button>) : (
