@@ -36,3 +36,18 @@
     font-weight: 700;
   }
 }
+
+
+@layer components {
+  .footer_link_container {
+    @apply flex flex-col;
+  }
+
+  .footer_links {
+    @apply mt-6 text-sm-text;
+  }
+
+  .footer_link_title {
+    @apply text-2xl font-semibold text-md-text;
+  }
+}

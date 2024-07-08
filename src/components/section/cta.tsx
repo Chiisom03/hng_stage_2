@@ -4,7 +4,7 @@ import Button from '../commons/button';
 
 const CtaSection = () => {
   return (
-    <section className=''>
+    <section className='mb-[200px]'>
       <div className='flex justify-center items-center max-w-[1182px] mx-auto'>
         <div className='h-[450px] w-full rounded-l-[10px] bg-turquoise pl-[116px] pr-[70px] pt-[114px] pb-[62px]'>
           <h2 className='text-[68px] max-w-[552px] leading-tight mb-9'>RE-IMAGINE CLASS WITH POISE</h2>

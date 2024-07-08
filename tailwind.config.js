@@ -11,6 +11,7 @@ export default {
         primary: 'var(--color-primary)',
         turquoise: 'var(--color-turquoise)',
         't-orange': 'var(--color-t-orange)',
+        'btn-hover': 'var(--color-button-hover)'
       },
       fontFamily: {
          cabin: ['var(--default-font)'],
