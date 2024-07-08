@@ -9,12 +9,12 @@ const Footer = () => {
   const [subscriptionEmail, setSubscriptionEmail] = useState('');
   return (
     <footer className="bg-primary text-black pt-[120px] h-[560px]">
-      <div className="max-w-[1182px] mx-auto flex flex-col items-center justify-center">
+      <div className="max-w-[1182px] mx-auto flex flex-col items-center justify-center px-[160px]">
         <div className="flex flex-col md:flex-row items-start justify-center w-full">
 
           <div className="footer_link_container mr-[74px]">
             <div className="flex gap-x-[30px] items-center justify-center">
-              <img src={FacebookIcon} alt="facebook icon" />
+              <img src={FacebookIcon} alt="facebook icon" className="w-[50px]" />
               <img src={InstagramIcon} alt="instagram icon" className="w-[50px]" />
             </div>
           </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
 

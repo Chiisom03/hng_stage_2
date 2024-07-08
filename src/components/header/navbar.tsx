@@ -36,8 +36,8 @@ const Navbar = () => {
                     </ul>
 
                     <div className='flex justify-center items-center gap-x-[25px] mr-8'>
-                        <img src={SearchIcon} alt="Search Icon" />
-                        <img src={CartIcon} alt="Cart Icon" />
+                        <a href="/"><img src={SearchIcon} alt="Search Icon" width={50} height={50} className='icons' /></a>
+                        <a href="/cart"> <img src={CartIcon} alt="Cart Icon" className='icons' /></a>
                     </div>
 
                     <Button btnText='sign in' />

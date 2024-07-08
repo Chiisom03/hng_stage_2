@@ -51,4 +51,8 @@
   .footer_link_title {
     @apply text-2xl font-semibold text-md-text;
   }
+
+  .icons {
+    @apply hover:scale-95 duration-200;
+  }
 }

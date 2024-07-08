@@ -3,6 +3,8 @@ import BohoEarings from '../../assets/img/product_price/boho_earings.png'
 import GalaxyRing from '../../assets/img/product_price/galaxy_ring.png'
 import Kateryna from '../../assets/img/product_price/kateryna.png'
 
+import HeartIcon from '../../assets/img/icons/heart_icon.svg'
+
 const ByProducts = () => {
 
   const products = [
@@ -30,19 +32,52 @@ const ByProducts = () => {
       isLiked: false,
       image: Kateryna
     },
+    {
+      name: 'COMELIA BRACLETS',
+      price: 'N2,300,000',
+      isLiked: false,
+      image: ComeliaBracelets
+    },
+    {
+      name: 'Boho Earings',
+      price: 'N800,000',
+      isLiked: false,
+      image: BohoEarings
+    },
+    {
+      name: 'Galaxy Ring',
+      price: 'N1,000,000',
+      isLiked: false,
+      image: GalaxyRing
+    },
+    {
+      name: 'Kateryna',
+      price: 'N1,000,000',
+      isLiked: false,
+      image: Kateryna
+    },
   ]
   return (
-    <div className='lg:mb-[180px]'>
+    <div className='lg:mb-[180px] mx-auto max-w-[1512px]'>
       <h1 className='max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
 
-      <div className='flex mt-[68px] mb-[57px]'>
-        {products.map((product => (
-          <div key={product.name} className='flex flex-col'>
-            <img src={product.image} alt="" className='w-[438px] h-[400px]' />
-            <p className='text-4xl uppercase'>{product.name}</p>
-            <p className='text-md-text'>{product.price}</p>
-          </div>
-        )))}
+      <div className="w-full mt-[68px] mb-[57px] overflow-x-scroll">
+        <div className='flex w-max h-max pb-8'>
+          {products.map((product => (
+            <div key={product.name} className='flex flex-col'>
+              <img src={product.image} alt="" className='w-[438px] h-[400px]' />
+              <div className='flex items-start justify-between mt-[42px] ml-8'>
+                <div>
+                  <p className='text-4xl uppercase'>{product.name}</p>
+                  <p className='text-md-text'>{product.price}</p>
+                </div>
+                <div className='rounded-full py-[8px] pl-[8px] pr-[12px] bg-gray-100'>
+                  <img src={HeartIcon} alt="heart_icon" className='w-[50px] h-[50px]' />
+                </div>
+              </div>
+            </div>
+          )))}
+        </div>
       </div>
 
     </div>
