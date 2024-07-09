@@ -17,6 +17,10 @@ export const AppRouter = () => {
       element: <CheckOutPage />,
     },
     {
+      path: "/checkout/:id",
+      element: <CheckOutPage />,
+    },
+    {
       path: "/products",
       element: <Products />,
     },
