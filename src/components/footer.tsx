@@ -20,8 +20,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="lg:flex grid grid-cols-2 gap-y-[31px] lg:gap-y-0 items-start justify-center w-full">
-            <div className="footer_link_container mr-[29px]">
+          <div className="lg:flex grid grid-cols-2 gap-x-4 gap-y-[31px] lg:gap-y-0 items-start lg:justify-center justify-between w-full">
+            <div className="footer_link_container lg:mr-[29px] mr-0">
               <h1 className="footer_link_title">OUR SERVICES</h1>
               <ul className="footer_links">
                 <li><a href="">PREMIUM SALES</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer_link_container mr-[33px] mt[31px] lg:mt-0">
+            <div className="footer_link_container lg:mr-[33px] mr-0 lg:ml-0 ml-6 mt[31px] lg:mt-0">
               <h1 className="footer_link_title">PRODUCTS</h1>
               <ul className="footer_links">
                 <li><a href="/">EARRINGS</a></li>

@@ -30,7 +30,7 @@ const ProductsShowcase = () => {
   ];
 
   return (
-    <div className='mt-[200px] max-w-[1146px] mx-auto mb-[120px] flex'>
+    <div className='hidden mt-[200px] max-w-[1146px] mx-auto mb-[120px] lg:flex'>
       <div className="grid lg:grid-cols-2 gap-8 mr-[101px]">
         {products.map((product) => (
           <div key={product.id} className="h-max w-max bg-gray-100">

@@ -59,7 +59,8 @@ const ByProducts = () => {
   ]
   return (
     <div className='lg:mb-[180px] mx-auto max-w-[1512px]'>
-      <h1 className='max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
+      <h1 className='lg:block hidden max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
+      <h1 className='lg:hidden block max-w-[1182px] lg:mx-auto mx-4 uppercase mb-[68px] text-[54px]'>ARRIVALS</h1>
 
       <div className="w-full mt-[68px] mb-[57px] overflow-x-scroll">
         <div className='flex w-max h-max pb-8'>
