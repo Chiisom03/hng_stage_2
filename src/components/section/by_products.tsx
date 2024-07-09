@@ -43,25 +43,25 @@ const MobileByProduct = () => {
       image: Kateryna
     },
     {
-      name: 'COMELIA BRACLETS',
+      name: 'COMELIA BRACLETS2',
       price: 'N2,300,000',
       isLiked: false,
       image: ComeliaBracelets
     },
     {
-      name: 'Boho Earings',
+      name: 'Boho Earings2',
       price: 'N800,000',
       isLiked: false,
       image: BohoEarings
     },
     {
-      name: 'Galaxy Ring',
+      name: 'Galaxy Ring2',
       price: 'N1,000,000',
       isLiked: false,
       image: GalaxyRing
     },
     {
-      name: 'Kateryna',
+      name: 'Kateryna2',
       price: 'N1,000,000',
       isLiked: false,
       image: Kateryna
@@ -121,25 +121,25 @@ const DesktopByProduct = () => {
       image: Kateryna
     },
     {
-      name: 'COMELIA BRACLETS',
+      name: 'COMELIA BRACLETS2',
       price: 'N2,300,000',
       isLiked: false,
       image: ComeliaBracelets
     },
     {
-      name: 'Boho Earings',
+      name: 'Boho Earings2',
       price: 'N800,000',
       isLiked: false,
       image: BohoEarings
     },
     {
-      name: 'Galaxy Ring',
+      name: 'Galaxy Ring2',
       price: 'N1,000,000',
       isLiked: false,
       image: GalaxyRing
     },
     {
-      name: 'Kateryna',
+      name: 'Kateryna2',
       price: 'N1,000,000',
       isLiked: false,
       image: Kateryna
@@ -147,8 +147,7 @@ const DesktopByProduct = () => {
   ]
   return (
     <div className='hidden lg:block lg:mb-[180px] mx-auto max-w-[1512px]'>
-      <h1 className='lg:block hidden max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
-      <h1 className='lg:hidden block max-w-[1182px] lg:mx-auto mx-4 uppercase mb-[68px] text-[54px]'>ARRIVALS</h1>
+      <h1 className='max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
 
       <div className="w-full mt-[68px] mb-[57px] overflow-x-scroll">
         <div className='flex w-max h-max pb-8'>
