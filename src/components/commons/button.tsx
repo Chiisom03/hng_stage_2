@@ -15,7 +15,7 @@ const Button: FC<ButtonProps> = ({ btnText, width, onClick, hasBorder, type }) =
         hasBorder ? (
           <button
             onClick={onClick} type={type ?? 'button'}
-            className={`border duration-300 border-t-orange uppercase text-sm-text h-[72px] bg-transparent text-t-orange ${width ?? 'w-[306px]'}`}>
+            className={`border duration-300 border-t-orange uppercase text-sm-text h-[72px] bg-transparent text-t-orange ${width ?? 'w-full lg:w-[306px]'}`}>
             {btnText}
           </button>) : (
           <button

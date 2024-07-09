@@ -45,11 +45,11 @@
   }
 
   .footer_links {
-    @apply mt-6 text-sm-text w-max;
+    @apply mt-6 text-[20px] lg:mb-4 mb-5 lg:text-sm-text w-max;
   }
 
   .footer_link_title {
-    @apply text-2xl font-semibold text-md-text;
+    @apply font-semibold text-[28px] lg:text-md-text;
   }
 
   .icons {

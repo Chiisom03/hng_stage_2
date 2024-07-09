@@ -29,8 +29,8 @@ const MobileHero = () => {
 }
 const DesktopHero = () => {
   return (
-    <div className="lg:flex hidden bg-primary w-full flex-col justify-center items-center h-[500px]">
-      <div className="max-w-[1182px] mx-auto w-full flex flex-col lg:flex-row justify-center items-center space-x-[83px]">
+    <div className="lg:flex hidden bg-primary w-full flex-col justify-center items-center h-[500px] max-w-screen">
+      <div className="max-w-[1182px] px-auto w-full flex flex-col lg:flex-row justify-center items-center space-x-[83px]">
 
         <div className="flex flex-col justify-between mb-[89px]">
           <h1 className="text-[96px] font-bold text-black mt-[51px] mb-[79px] w-max">THE NEW RETRO</h1>

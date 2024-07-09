@@ -1,5 +1,5 @@
 import Navbar from "./components/header/navbar"
-// import Footer from "./components/footer"
+import Footer from "./components/footer"
 import { AppRouter } from "./routes"
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="w-full bg-[#FBFBFB] font-cabin">
       <Navbar />
       <AppRouter />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
