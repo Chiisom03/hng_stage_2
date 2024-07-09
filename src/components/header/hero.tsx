@@ -12,21 +12,17 @@ const Hero = () => {
 }
 const MobileHero = () => {
   return (
-    <div className="lg:hidden bg-primary w-full h-max">
+    <div className="lg:hidden bg-primary h-max flex flex-col justify-center items-center w-full px-4 mb-[px]">
 
-      <div className="mb-[px] flex flex-col justify-center items-center w-full mx-4">
-        <h1 className="text-[60px] leading-normal font-semibold text-black w-[387px]">
-          STRIDE DOWN YOUR MUSE
-        </h1>
+      <h1 className="text-[60px] leading-normal font-semibold text-black">
+        STRIDE DOWN YOUR MUSE
+      </h1>
 
-        <img src={MobileHeroImage} alt="hero_image" className="w-[396px] h-[448px] mt-4" />
+      <img src={MobileHeroImage} alt="hero_image" className="w-[396px] h-[448px] mt-4 mb-[60px]" />
 
-        <p className="text-[22px] text-black">
-          GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING
-        </p>
+      <p className="text-[22px] text-black">GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING</p>
 
-        <Button btnText="shop now" width="w-[212px]" />
-      </div>
+      <Button btnText="shop now" width="w-[212px]" />
 
     </div>
   )
