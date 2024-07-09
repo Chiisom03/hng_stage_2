@@ -32,15 +32,13 @@ const Navbar = () => {
     return (
         <nav className="w-full lg:border-b border-white bg-primary relative">
             <div className="flex justify-between items-center py-[20px] max-w-[1182px] lg:mx-auto mx-4">
-                <img src={Logo} alt="logo" className='h-5 w-[100px]' />
-                <div className="flex gap-x-4 items-center">
-                    <ul className={`lg:flex lg:relative absolute top-[72px] left-0 w-full flex-col lg:flex-row divide-y-2 divide-primary lg:divide-y-0 bg-[#FBFBFB] lg:bg-transparent ${showMenu ? 'block' : 'hidden'}`}>
-                        <button className='lg:hidden absolute icons top-0 right-0' onClick={() => setShowMenu(!showMenu)}>
-                            <img src={Close} alt="close" />
-                        </button>
 
+                <img src={Logo} alt="logo" className='h-5 w-[100px]' />
+
+                <div className="flex gap-x-4 items-center">
+                    <ul className={`lg:flex lg:relative lg:top-0 absolute top-[72px] left-0 w-full flex-col lg:flex-row bg-[#FBFBFB] lg:bg-transparent lg:px-0 px-4 ${showMenu ? 'block' : 'hidden'}`}>
                         {navLinks.map((nav) => (
-                            <li key={nav.title} className="mr-5 last:mr-[60px] text-md-text uppercase w-full">
+                            <li key={nav.title} className="mr-5 border-b lg:border-none border-t-orange last:mr-[60px] text-md-text uppercase w-full">
                                 <a href={nav.link}>{nav.title}</a>
                             </li>
                         ))}
@@ -51,9 +49,14 @@ const Navbar = () => {
                     <div className='flex justify-center items-center gap-x-5 lg:gap-x-[25px] lg:mr-8'>
                         <a href="/"><img src={SearchIcon} alt="Search Icon" className='icons' /></a>
                         <a href="/cart"> <img src={CartIcon} alt="Cart Icon" className='icons' /></a>
-                        <button className='block lg:hidden h-10 w-10 ' onClick={() => setShowMenu(!showMenu)}>
-                            <img src={HamIcon} alt="harmburger_menu" />
-                        </button>
+                        <div className='lg:hidden'>
+                            <button className={`${!showMenu ? 'block' : 'hidden'} icons`} onClick={() => setShowMenu(!showMenu)}>
+                                <img src={HamIcon} alt="harmburger_menu" />
+                            </button>
+                            <button className={`${showMenu ? 'block' : 'hidden'} icons`} onClick={() => setShowMenu(!showMenu)}>
+                                <img src={Close} alt="close" />
+                            </button>
+                        </div>
                     </div>
 
 
