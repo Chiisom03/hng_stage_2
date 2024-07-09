@@ -4,7 +4,6 @@ import MobileHeroImage from "../../assets/img/mobile_hero_img.png"
 import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
-  const navigate = useNavigate();
   return (
     <>
       <DesktopHero />
