@@ -15,12 +15,12 @@ const MobileHero = () => {
     <div className="lg:hidden bg-primary h-max flex flex-col justify-center items-center w-full px-4 mb-[px]">
 
       <h1 className="text-[60px] leading-[72.9px] font-semibold text-black mb-4 ">
-        STRIDE&nbsp;DOWN<br /> YOUR MUSE
+        STRIDE DOWN<br /> YOUR MUSE
       </h1>
 
       <img src={MobileHeroImage} alt="hero_image" className="w-[396px] h-[448px]" />
 
-      <p className="text-[22px] text-black mb-[43px] mt-[60px]">GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING</p>
+      <p className="text-[22px] text-black mb-[43px] mt-[60px]">GET ALL EXQUISITE AND LUXERY JEWELRY<br />TO YOUR CONFIDENCE GOING</p>
 
       <Button btnText="shop now" width="w-[212px]" />
 
@@ -36,13 +36,12 @@ const DesktopHero = () => {
           <h1 className="text-[96px] font-bold text-black mt-[51px] mb-[79px] w-max">THE NEW RETRO</h1>
 
           <div>
-            <p className="hidden lg:block text-sm-text text-black max-w-[416px] mb-[34px]">GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING</p>
-            <Button btnText="shop now" width="lg:w-[255px]" />
+            <p className="text-sm-text text-black max-w-[416px] mb-[34px]">GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING</p>
+            <Button btnText="shop now" width="w-[255px] h-[72px]" />
           </div>
         </div>
 
-        <img src={HeroImage} alt="hero_image" className="hidden lg:block lg:w-[465px] lg:h-[500px]" />
-        <img src={MobileHeroImage} alt="hero_image" className="block lg:hidden w-[396px] h-[] lg:w-[465px] lg:h-[500px]" />
+        <img src={HeroImage} alt="hero_image" className="lg:w-[465px] lg:h-[500px]" />
       </div>
     </div>
   )

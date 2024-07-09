@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full lg:border-b border-white bg-primary relative">
-            <div className="flex justify-between items-center py-[20px] max-w-[1182px] lg:mx-auto mx-4">
+            <div className="flex bg-primary justify-between items-center py-[20px] lg:max-w-[1182px] lg:mx-auto mx-4">
 
                 <img src={Logo} alt="logo" className='h-5 w-[100px]' />
 
