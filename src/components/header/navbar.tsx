@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <nav className="w-full border-b border-white bg-primary">
-            <div className="flex justify-between py-[20px] max-w-[1182px] mx-auto">
+            <div className="flex justify-between py-[20px] max-w-[1182px] lg:mx-auto mx-4">
                 <img src={Logo} alt="logo" />
                 <div className="flex gap-x-4 items-center">
                     <ul className="flex flex-col lg:flex-row divide-y-2 divide-primary lg:divide-y-0 bg-[#FBFBFB] lg:bg-transparent hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
 
 
                     <div className='flex justify-center items-center gap-x-[25px] mr-8'>
-                        <a href="/"><img src={SearchIcon} alt="Search Icon" width={50} height={50} className='icons' /></a>
+                        <a href="/"><img src={SearchIcon} alt="Search Icon" className='icons' /></a>
                         <a href="/cart"> <img src={CartIcon} alt="Cart Icon" className='icons' /></a>
                     </div>
 
