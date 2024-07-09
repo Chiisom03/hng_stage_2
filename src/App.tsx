@@ -1,6 +1,6 @@
-import Footer from "./components/footer"
+// import Footer from "./components/footer"
 import Navbar from "./components/header/navbar"
-import { AppRouter } from "./routes"
+// import { AppRouter } from "./routes"
 
 function App() {
 
