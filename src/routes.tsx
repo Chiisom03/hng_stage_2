@@ -3,7 +3,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from "./pages/home";
-import CartPage from "./pages/cart";
+import CheckOutPage from "./pages/checkout";
 
 export const AppRouter = () => {
   const routes = [
@@ -13,7 +13,7 @@ export const AppRouter = () => {
     },
     {
       path: "/cart",
-      element: <CartPage />,
+      element: <CheckOutPage />,
     },
     {
       path: "/*",

@@ -3,8 +3,10 @@
   --font-medium: 32px;
   --font-large: 64px;
   --color-primary: #FFEBD8;
+  --color-background: #FBFBFB;
   --color-turquoise: #A0E9FF;
   --color-t-orange: #F56E0F;
   --color-button-hover: #FBFBFB;
+  --color-space-gray: #00000080;
   --default-font: 'cabincondensed', sans-serif;
 }

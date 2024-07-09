@@ -13,6 +13,9 @@ export default {
         't-orange': 'var(--color-t-orange)',
         'btn-hover': 'var(--color-button-hover)'
       },
+      borderRadius: {
+        primary: '10px',
+      },
       fontFamily: {
          cabin: ['var(--default-font)'],
       },
