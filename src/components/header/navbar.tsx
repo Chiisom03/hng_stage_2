@@ -40,7 +40,7 @@ const Navbar = () => {
 
 
 
-                    <div className='flex justify-center items-center gap-x-5 lg:gap-x-[25px] mr-8'>
+                    <div className='flex justify-center items-center gap-x-5 lg:gap-x-[25px] lg:mr-8'>
                         <a href="/"><img src={SearchIcon} alt="Search Icon" className='icons' /></a>
                         <a href="/cart"> <img src={CartIcon} alt="Cart Icon" className='icons' /></a>
                         <div className='block lg:hidden h-10 w-10 '>
