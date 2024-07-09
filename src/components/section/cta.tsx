@@ -1,9 +1,12 @@
 import CtaImage from '../../assets/img/cta.png';
 import Bestsellers from '../../assets/img/products/bestsellers.png'
 import Button from '../commons/button';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const CtaSection = () => {
+  
   return (
     <>
       <section className='mb-[200px] lg:block hidden'>
@@ -23,12 +26,13 @@ const CtaSection = () => {
 }
 
 const CtaMobile = () => {
+  const navigate = useNavigate(); 
   return (
     <section className='mb-[200px] lg:hidden mx-4'>
       <div className='flex flex-col items-center max-w-[1182px] mx-auto'>
         <img src={Bestsellers} alt='necklace' className='w-[397px] h-[256px] shrink-0' />
         <h2 className='text-[28px] max-w-[552px] leading-tight mt-6 mb-[60px] self-start'>BEST SELLERS</h2>
-        <Button btnText='explore' width='w-[255px]' />
+        <Button onClick={()=>{navigate(`/checkout/1`)}}   btnText='explore' width='w-[255px]' />
       </div>
     </section>
   )
