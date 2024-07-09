@@ -13,6 +13,7 @@ const Hero = () => {
   )
 }
 const MobileHero = () => {
+  const navigate = useNavigate();
   return (
     <div className="lg:hidden bg-primary h-max flex flex-col justify-center items-center w-full px-4 mb-[px]">
 
@@ -30,6 +31,7 @@ const MobileHero = () => {
   )
 }
 const DesktopHero = () => {
+  const navigate = useNavigate();
   return (
     <div className="lg:flex hidden bg-primary w-full flex-col justify-center items-center h-[500px] max-w-screen">
       <div className="max-w-[1182px] px-auto w-full flex flex-col lg:flex-row justify-center items-center space-x-[83px]">
@@ -39,7 +41,7 @@ const DesktopHero = () => {
 
           <div>
             <p className="text-sm-text text-black max-w-[416px] mb-[34px]">GET ALL EXQUISITE AND LUXERY JEWELRY TO YOUR CONFIDENCE GOING</p>
-            <Button btnText="shop now" width="w-[255px] h-[72px]" />
+            <Button onClick={()=>{navigate(`/products`)}} btnText="shop now" width="w-[255px] h-[72px]" />
           </div>
         </div>
 
