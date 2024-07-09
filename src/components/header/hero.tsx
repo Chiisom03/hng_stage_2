@@ -15,7 +15,7 @@ const MobileHero = () => {
     <div className="lg:hidden bg-primary h-max flex flex-col justify-center items-center w-full px-4 mb-[px]">
 
       <h1 className="text-[60px] leading-normal font-semibold text-black">
-        STRIDE DOWN YOUR MUSE
+        STRIDE&nbsp;DOWN<br /> YOUR MUSE
       </h1>
 
       <img src={MobileHeroImage} alt="hero_image" className="w-[396px] h-[448px] mt-4 mb-[60px]" />
