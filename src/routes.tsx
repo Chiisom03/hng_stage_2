@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import HomePage from "./pages/home";
 import CheckOutPage from "./pages/checkout";
+import Products from "./pages/products";
 
 export const AppRouter = () => {
   const routes = [
@@ -14,6 +15,10 @@ export const AppRouter = () => {
     {
       path: "/cart",
       element: <CheckOutPage />,
+    },
+    {
+      path: "/products",
+      element: <Products />,
     },
     {
       path: "/*",

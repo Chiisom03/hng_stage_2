@@ -15,7 +15,7 @@ const Navbar = () => {
         },
         {
             title: "Shop",
-            link: '/shop'
+            link: '/products'
         },
         {
             title: "Collection",
