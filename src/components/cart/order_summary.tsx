@@ -1,4 +1,4 @@
-import Necklace from '../../assets/img/products/necklace.png';
+// import Necklace from '../../assets/img/products/necklace.png';
 import GalaxyRing from '../../assets/img/product_price/galaxy_ring.png';
 import WhiteStone from '../../assets/img/products/bestsellers.png';
 import Kateryna from '../../assets/img/product_price/kateryna.png';
