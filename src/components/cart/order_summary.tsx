@@ -90,11 +90,11 @@ const OrderSummary = () => {
 
 
   return (
-    <div className='rounded-primary bg-primary pt-6 pb-[87px] px-[32px] w-[440px] h-[684px] mb-[136px]'>
+    <div className='rounded-primary bg-primary pt-6  pb-[87px] px-[32px] w-[440px] h-[684px] mb-[136px] order-first lg:order-last'>
       <div className='flex gap-x-7 items-center mb-[22px]'>
         <h2 className='text-sm-text'>ORDER SUMMARY</h2>
         <p className='text-[#00000080]'>1 Item</p>
-      </div>
+      </div>  
 
       <img src={selectedProduct?.image} alt="" className='h-[330px] w-[376px] mb-[18px]' />
 
