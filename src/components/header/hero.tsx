@@ -1,8 +1,10 @@
 import Button from "../commons/button"
 import HeroImage from "../../assets/img/hero_image.png"
 import MobileHeroImage from "../../assets/img/mobile_hero_img.png"
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <DesktopHero />
@@ -22,7 +24,7 @@ const MobileHero = () => {
 
       <p className="text-[22px] text-black mb-[43px] mt-[60px]">GET ALL EXQUISITE AND LUXERY JEWELRY<br />TO YOUR CONFIDENCE GOING</p>
 
-      <Button btnText="shop now" width="w-[212px]" />
+      <Button onClick={()=>{navigate(`/products`)}} btnText="shop now" width="w-[212px]" />
 
     </div>
   )
