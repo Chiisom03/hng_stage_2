@@ -24,10 +24,10 @@ const CtaSection = () => {
 
 const CtaMobile = () => {
   return (
-    <section className='mb-[200px] lg:hidden'>
+    <section className='mb-[200px] lg:hidden mx-4'>
       <div className='flex flex-col items-center max-w-[1182px] mx-auto'>
         <img src={Bestsellers} alt='necklace' className='w-[397px] h-[256px] shrink-0' />
-        <h2 className='text-[28px] max-w-[552px] leading-tight mt-6 mb-[60px] self-start ml-4'>BEST SELLERS</h2>
+        <h2 className='text-[28px] max-w-[552px] leading-tight mt-6 mb-[60px] self-start'>BEST SELLERS</h2>
         <Button btnText='explore' width='w-[255px]' />
       </div>
     </section>
