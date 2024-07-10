@@ -8,7 +8,7 @@ import CardIcon from '../../../assets/img/icons/credit card.svg';
 export const InputField: React.FC<InputFieldProps> = ({ type, placeholder, value, onChange, isCardInput }) => {
   return (
     <div
-      className='flex justify-between border border-t-orange h-[60px] rounded-[10px] items-center pl-[14px] pr-4 w-[480px] gap-x-[190px]'>
+      className='flex justify-between border border-t-orange h-[60px] rounded-[10px] items-center pl-[14px] pr-4 w-full lg:w-[480px] ld:gap-x-[190px]'>
       <input
         type={type}
         placeholder={placeholder}
@@ -34,9 +34,9 @@ export const CardGroupInputField: React.FC<CardGroupInputFieldProps> = ({
   onChange3,
 }) => {
   return (
-    <div className="">
+    <div className="w-full">
       <div
-        className='flex justify-between items-center border-t border-x border-t-orange h-max rounded-t-[10px] w-[478.998px] pl-[18px] focus-within:outline-4 pt-[6px] pb-[7.84px] pr-[16.03px]'>
+        className='flex justify-between items-center border-t border-x border-t-orange h-max rounded-t-[10px] lg:w-[478.998px] w-full pl-[18px] pt-[6px] pb-[7.84px] lg:pr-[16.03px] pr-[12.24px]'>
         <input
           type={type1}
           className='bg-transparent text-base pt-[4px] outline-none'
@@ -44,23 +44,23 @@ export const CardGroupInputField: React.FC<CardGroupInputFieldProps> = ({
           value={value1}
           onChange={onChange1}
         />
-        <div className='flex gap-x-[16.03px] items-center justify-center'>
-          <img src={VisaIcon} alt="visa_icon" className='w-[40.084px] h-[30px]' />
-          <img src={MasterCardIcon} alt="mastercard_icon" className='w-[40.084px] h-[30px]' />
-          <img src={AmexIcon} alt="amex_icon" className='w-[40.084px] h-[30px]' />
+        <div className='flex lg:gap-x-[16.03px] gap-x-[14px] items-center justify-center w-full'>
+          <img src={VisaIcon} alt="visa_icon" className='lg:w-[40.084px] lg:h-[30px] w-[30px] h-5' />
+          <img src={MasterCardIcon} alt="mastercard_icon" className='lg:w-[40.084px] lg:h-[30px] w-[30px] h-5' />
+          <img src={AmexIcon} alt="amex_icon" className='lg:w-[40.084px] lg:h-[30px] w-[30px] h-5' />
         </div>
       </div>
 
-      <div className='flex w-[478.998px]'>
+      <div className='flex lg:w-[478.998px] w-full'>
         <input type={type2}
           placeholder='MM / YY'
-          className='border border-t-orange h-[60px] rounded-es-[10px] pl-4 bg-transparent text-[16px] w-[240.5px] pt-[12.52px] pb-[25px]'
+          className='border border-t-orange h-[60px] rounded-es-[10px] pl-4 bg-transparent text-[16px] lg:w-[240.5px] w-full pt-[12.52px] pb-[25px]'
           value={value2}
           onChange={onChange2}
         />
         <input type={type3}
           placeholder='CVC'
-          className='border-y border-r border-t-orange h-[60px] rounded-ee-[10px] px-4 bg-transparent text-[16px] w-[238.5px] pt-[12.52px] pb-[25px]'
+          className='border-y border-r border-t-orange h-[60px] rounded-ee-[10px] px-4 bg-transparent text-[16px] lg:w-[238.5px] w-full pt-[12.52px] pb-[25px]'
           value={value3}
           onChange={onChange3}
         />
@@ -75,11 +75,11 @@ export const BillingAddressInput: React.FC<BillingAddressInputFieldProps> = ({
   return (
     <div>
       <div
-        className='flex justify-between items-center border-t border-x border-t-orange h-max rounded-t-[10px] w-[480px] pl-[18px] pb-[12.48px] pr-[16.03px] pt-[13px]'>
+        className='flex justify-between items-center border-t border-x border-t-orange h-max rounded-t-[10px] lg:w-[480px] w-full pl-[18px] pb-[12.48px] pr-[16.03px] pt-[13px]'>
         <label htmlFor={label}>{label}</label>
       </div>
 
-      <div className='flex w-[480px]'>
+      <div className='flex lg:w-[480px] w-full'>
         <input type={type}
           placeholder={placeholder}
           className='border border-t-orange h-[60px] rounded-b-primary pl-4 bg-transparent text-[16px] w-full pt-[12.52px] pb-[25px]'

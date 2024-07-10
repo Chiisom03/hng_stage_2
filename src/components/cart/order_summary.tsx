@@ -90,27 +90,29 @@ const OrderSummary = () => {
 
 
   return (
-    <div className='rounded-primary bg-primary pt-6  pb-[87px] px-[32px] w-[440px] h-[684px] mb-[136px] order-first lg:order-last'>
-      <div className='flex gap-x-7 items-center mb-[22px]'>
+    <div className='lg:rounded-primary rounded-none bg-primary lg:pt-6 pt-7 pb-[87px] px-8 lg:w-[440px] w-full h-[684px] lg:mb-[136px] order-first lg:order-last lg:block flex flex-col items-center lg:ml-[69px]'>
+      <div className='flex gap-x-7 items-center lg:justify-start justify-center mb-[22px]'>
         <h2 className='text-sm-text'>ORDER SUMMARY</h2>
         <p className='text-[#00000080]'>1 Item</p>
-      </div>  
+      </div>
 
-      <img src={selectedProduct?.image} alt="" className='h-[330px] w-[376px] mb-[18px]' />
+      <img src={selectedProduct?.image} alt="" className='h-[330px] w-[376px] mb-[18px] rounded-primary ' />
 
-      <div className='pb-8 border-b-[1px] border-t-orange flex gap-[67px] items-center justify-center mb-11'>
-        <div className='flex gap-x-[17px] items-center justify-center'>
-          <p className='text-sm-text'>{selectedProduct?.name}</p>
-          <p className='text-[#00000080]'>1 x</p>
+      <div className='pb-8 border-b-[1px] border-t-orange flex lg:gap-x-[67px] gap-x-[44px] items-center justify-between mb-11 w-full flex-wrap lg:flex-nowrap'>
+        <div className='flex items-center gap-x-[17px] w-full'>
+          <p className='text-sm-text w-max'>{selectedProduct?.name}</p>
+          <p className='text-[#00000080]'>1x</p>
         </div>
+
         <p className='text-[20px]'>{selectedProduct?.price}</p>
       </div>
 
-      <div className='flex items-center gap-x-[244px] mb-[18px]'>
+      <div className='flex items-center justify-between mb-[18px] w-full'>
         <p className='text-[22px]'>SHIPPING</p>
         <p className='text-[20px] text-[#00000080]'>Free</p>
       </div>
-      <div className='flex justify-between mb-[18px]'>
+
+      <div className='flex justify-between mb-[18px] items-center w-full'>
         <p className='font-medium text-[22px]'>TOTAL</p>
         <p className='text-[20px] font-medium'>{selectedProduct?.price}</p>
       </div>
