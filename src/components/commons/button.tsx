@@ -20,7 +20,7 @@ const Button: FC<ButtonProps> = ({ btnText, width, onClick, hasBorder, type }) =
           </button>) : (
           <button
             onClick={onClick}
-            className={`hover:bg-btn-hover hover:border duration-300 border-t-orange uppercase text-md-text bg-t-orange rounded-[10px] ${width ?? 'w-[167px]'} h-[60px]`}>
+            className={`hover:bg-btn-hover hover:border duration-300 border-t-orange uppercase text-[28px] lg:text-md-text bg-t-orange rounded-[10px] ${width ?? 'w-[167px]'} h-[60px]`}>
             {btnText}
           </button>)
       }
