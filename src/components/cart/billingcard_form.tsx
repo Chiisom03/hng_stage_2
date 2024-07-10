@@ -42,12 +42,14 @@ const BillingCardForm = () => {
         <h3 className='text-base mt-5 mb-4 uppercase font-medium lg:w-max'>Billing Address</h3>
         <BillingAddressInput label={'Nigeria'} type='text' placeholder='Address' value={billingAddress} onChange={(e) => { setBillingAddress(e.target.value); }} />
 
-        <div className='mt-5 flex gap-x-4 w-max items-center'>
-          <input type="checkbox" name='save_info' id='save_info' className='appearance-none checked:bg-t-orange border border-t-orange h-5 w-5 flex justify-center' />
-          <label htmlFor="save_info" className=''> Securely save my information for 1-click checkout </label>
+        <div className='lg:mt-5 lg:mb-[38px] flex gap-x-4 lg:w-max items-center mt-[29px] mb-[36px]'>
+          <input type="checkbox" name='save_info' id='save_info' className='appearance-none checked:bg-t-orange checked:content-[✓] border border-t-orange h-5 w-5 flex justify-center' />
+          <label htmlFor="save_info"> Securely save my information for 1-click checkout </label>
         </div>
 
-        {/* <Button btnText='purchase' width='w-[480px] h-[72px]' /> */}
+        <div className='w-full lg:w-0 flex lg:block justify-center items-center'>
+          <Button btnText='purchase' width='w-[480px] h-[72px]' />
+        </div>
       </form>
     </div>
   );
