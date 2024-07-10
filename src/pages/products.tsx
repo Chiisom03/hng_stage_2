@@ -11,7 +11,7 @@ import SkyCrown from '../assets/img/products/sky.png';
 import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
@@ -79,27 +79,29 @@ const navigate = useNavigate();
   ]
   return (
     <div className='mb-[176px]'>
-      <div className="lg:max-w-[1182px] lg:mx-auto mx-4">
+      <div className="lg:max-w-[1182px] lg:mx-auto px-4">
         <p className="mt-8">SHOP  /  CATEGORY  /  <span className="text-[#00000080]">DIAMOND JEWELRY</span></p>
 
-        <h2 className="uppercase text-[63px] mt-7 mb-[108px]">Products</h2>
-
-        <div className='grid lg:grid-cols-3 grid-cols-2 gap-x-[29px] gap-y-2 lg:gap-y-[42px]'>
-          {products.map((product) => (
-            <div key={product.id} >
-              <div className="h-max w-max bg-gray-100 rounded-[10px]'">
-                <img src={product.image} alt={product.name} className='lg:w-[376px] lg:h-[416px] bg-cover w-[190px] h-[280px] rounded-[10px]' />
-              </div>
-              <div className='lg:ml-4 ml-2'>
-                <p className='lg:mt-[42px] mt-4 text-[28px]'>{product.name}</p>
-                <div className='mt-3 flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center'>
-                  <p className='text-[28px]'>{product.price}</p>
-                  <button  onClick={()=>{navigate(`/checkout/${product.id}`)}} className='text-xl lg:text-[24px] bg-gray-100 rounded-primary px-2 py-3'>Add to cart</button>
+        <h2 className="uppercase lg:text-[63px] text-[54px] mt-7 mb-[108px]">Products</h2>
+        <div className="flex justify-center items-center">
+          <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 lg:gap-x-[29px] gap-x-2 gap-y-16 lg:gap-y-[42px]'>
+            {products.map((product) => (
+              <div key={product.id} >
+                <div className="h-max w-max bg-gray-100 rounded-[10px]'">
+                  <img src={product.image} alt={product.name} className='lg:w-[376px] lg:h-[416px] bg-cover w-[170px] h-[250px] rounded-[10px]' />
+                </div>
+                <div className='lg:ml-4 ml-2'>
+                  <p className='lg:mt-[42px] mt-4 lg:text-[28px] text-xl uppercase'>{product.name}</p>
+                  <div className='mt-3 flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center'>
+                    <p className='lg:text-[28px] text-lg'>{product.price}</p>
+                    <a href={`/checkout/${product.id}`} className='uppercase lg:normal-case text-xl lg:text-[24px] bg-gray-100 rounded-primary px-2 lg:py-3 py-2'>Add to cart</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
 
       </div>
     </div>
