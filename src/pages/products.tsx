@@ -8,10 +8,8 @@ import Stones from '../assets/img/products/classic_stone.png';
 import Estelle from '../assets/img/products/rings.png';
 import Oyster from '../assets/img/products/Oyster.png';
 import SkyCrown from '../assets/img/products/sky.png';
-import { useNavigate } from 'react-router-dom';
 
 const Products = () => {
-  const navigate = useNavigate();
   const products = [
     {
       id: 1,
