@@ -11,7 +11,7 @@ const CheckOutPage: React.FC = () => {
 
   const handleBackClick = () => navigate(-1)
   return (
-    <div className='lg:max-w-[1182px] w-full mx-auto lg:pt-[50px]'>
+    <div className='container w-full mx-auto lg:pt-[50px]'>
       <img
         src={BackArrowIcon}
         alt="back_arrow"

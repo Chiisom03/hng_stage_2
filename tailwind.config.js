@@ -25,6 +25,10 @@ export default {
         'lg-text': 'var(--font-large)',
       },
     },
-    plugins: [],
-}
+    screens: {
+      lg: '1024px',
+      xl: '1440px',
+    },
+  },
+  plugins: [],
 }

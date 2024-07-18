@@ -146,8 +146,8 @@ const DesktopByProduct = () => {
     },
   ]
   return (
-    <div className='hidden lg:block lg:mb-[180px] mx-auto max-w-[1512px]'>
-      <h1 className='max-w-[1182px] mx-auto text-lg-text uppercase mb-[68px]'>By Products</h1>
+    <div className='hidden lg:block lg:mb-[180px] mx-auto max-w-[2056px]'>
+      <h1 className='text-lg-text uppercase mb-[68px] max-w-[container] mx-5 xl:ml-[179px]'>By Products</h1>
 
       <div className="w-full mt-[68px] mb-[57px] overflow-x-scroll">
         <div className='flex w-max h-max pb-8'>

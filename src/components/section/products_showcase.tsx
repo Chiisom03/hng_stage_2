@@ -31,7 +31,7 @@ const ProductsShowcase = () => {
   ];
 
   return (
-    <div className='mt-[200px] lg:max-w-[1182px] lg:mx-auto mb-[120px] px-4'>
+    <div className='mt-[200px] container lg:mx-auto mb-[120px] px-4 lg:px-5 xl:px-20'>
       <h1 className='lg:hidden block text-[54px] uppercase mb-[46px]'>By Products</h1>
 
       <div className='lg:mt-[200px] flex justify-center items-center'>
